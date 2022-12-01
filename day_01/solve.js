@@ -10,16 +10,16 @@ const readline = require('readline');
   });
   rl.on('line', (line) => {
     if (line.trim().length === 0) {
-			if (current > max) {
-				max = current;
-			}
-			current = 0;
+      if (current > max) {
+        max = current;
+      }
+      current = 0;
     } else {
-			const num = parseInt(line);
-			current += num;
-		}
+      const num = parseInt(line);
+      current += num;
+    }
   });
 
   await new Promise((res) => rl.once('close', res));
-	console.log(`Max is ${max}`);
+  console.log(`Max is ${max}`);
 })();
