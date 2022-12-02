@@ -20,7 +20,6 @@ const readline = require('readline');
   });
 
   await new Promise((res) => rl.once('close', res));
-	//console.log(`Max is ${max}`);
   cals.sort( (a, b) => a - b);
   console.log(
     `Max is ${cals[cals.length - 1]} Top 3 is ${
