@@ -24,7 +24,7 @@ const readline = require('readline');
   cals.sort( (a, b) => a - b);
   console.log(
     `Max is ${cals[cals.length - 1]} Top 3 is ${
-      cals[cals.length - 1] + cals[cals.length - 2] + cals[cals.length - 3]
+      cals.slice(cals.length - 3).reduce((partialSum, a) => partialSum + a, 0)
     }`
   );
 })();
