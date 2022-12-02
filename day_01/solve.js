@@ -14,9 +14,9 @@ const readline = require('readline');
 			cals.push(current);
 			current = 0;
     } else {
-			const num = parseInt(line);
-			current += num;
-		}
+      const num = parseInt(line);
+      current += num;
+    }
   });
 
   await new Promise((res) => rl.once('close', res));
