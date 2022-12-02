@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "solve": "node solve.js"
+    "solve1": "node solve_pt1.js",
+    "solve2": "node solve_pt2.js"
   },
   "author": "",
   "license": "ISC"
