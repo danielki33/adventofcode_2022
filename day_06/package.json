@@ -1,0 +1,12 @@
+{
+  "name": "day_06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "solve_pt1": "node solve_pt1.js",
+    "solve_pt2": "node solve_pt2.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
